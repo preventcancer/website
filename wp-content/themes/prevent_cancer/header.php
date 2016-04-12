@@ -23,14 +23,14 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300' rel='stylesheet' type='text/css'>
         <!--<script src="js/functions.js" language="javascript"></script>
         <script src="js/theme-customizer.js" language="javascript"></script>-->
-        <?php wp_enqueue_script("jquery"); ?>
-        <?php wp_head();?>
-        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+        <!--<?php wp_enqueue_script("jquery"); ?>-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script src="<?php echo bloginfo('template_directory') ?>/js/functions.js"></script>  
         <script src="<?php echo bloginfo('template_directory') ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo bloginfo('template_directory') ?>/js/owl.carousel.min.js"></script>
-
+	<script src="<?php echo bloginfo('template_directory') ?>/js/custom.js"></script>
+ <?php wp_head();?>
     </head>
 <?php  header('X-Frame-Options: GOFORIT'); ?>
     <body>
@@ -90,6 +90,7 @@
                     </div>
                     <div class="donation-button-area"><a href="https://secure3.convio.net/pcf/site/Donation2?df_id=2540&2540.donation=form1&s_src=web&s_subsrc=main_donate" target="_blank" class="btn">donate now</a></div>
                 </div>
+
             </header>
             <?php if (!is_front_page()) { ?>
                 <div class="breadcrum-area hidden-mobile">
